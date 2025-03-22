@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+button:hover{
+    background-color: rgb(103, 32, 170);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    
+    
+}
+.color-acento{ color:brown;}
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logtexto-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .log-container{
+    background-image: url("media/milogodxn2.png");
+    background-size: cover;
+    background-position-x: center;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+}
+header .logo{
+    margin-top: 0px;
+    margin: 5px;
+    padding: 30px 30px;
+    flex-direction: row;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    font-size: 2.5em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+header a:hover{
+    color: brown;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) 
+    ,url("media/DXN-Fondo.jpg");
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.75em;
+}
+#dxn1{
+}
+#dxn1.container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-productos{
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align:justify;
+}
+#nuestros-productos .container{
+    margin-top: 0px;
+    padding: 30px 0px;
+}
+#nuestros-productos h2{
+    padding: 10px;
+    font-size: 3em;
+    text-align:center;
+    margin: 0px 50px;
+}
+#nuestros-productos p{
+    display: none;
+}
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Café-Preto.jpeg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Spirulina-120u.jpeg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Batata-Doce.jpeg");
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+#afiliate-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#afiliate-ya h2{
+    font-size: 9vw;
+}
+
+#afiliate-ya button{
+    font-size: 5vw;
+}
+footer{
+    font-size: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+@media (min-whith: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+#hero h1{
+    font-size: 5em;
+}
+#dxn1 .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#dxn1 .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30 px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#dxn1 h2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#dxn1 p{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+#dxn1 .img-container{
+    background-image: url("media/logodxnpng.png");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 320px;
+    margin-top: 8px;
+    padding: 5px 5px;
+    margin-block-end: 5px;
+}
+
+#nuestros-productos .programas{
+    display:flex;
+    justify-content: center;
+}
+#nuestros-productos p{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    font-size: 1em;
+}
+#nuestros-productos h3{
+    margin-top: 0;
+}
+#nuestros-productos .carta{
+    padding: 15px;
+}
